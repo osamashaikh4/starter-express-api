@@ -1,8 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const Stripe = require("stripe");
 
 const app = express();
+app.use(cors());
 const port = process.env.port || 8080;
+
 const SECRET_KEY =
   "sk_test_51Mz2mOFtSbngplj5dgubjYKYthofYdr6MP36ZJjrc2qzrlFBRyBXT9qF3obsLgyEqdonBFWCjD7snB5S2iFyx7oN00uYuJPUs3";
 
